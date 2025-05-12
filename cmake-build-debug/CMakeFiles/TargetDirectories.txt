@@ -1,0 +1,3 @@
+/Users/IsabelAdrada/Library/Mobile Documents/com~apple~CloudDocs/universidad/semestre 4/programación orientada a objetos/proyectoFinalPOO-main/cmake-build-debug/CMakeFiles/practica_sfml.dir
+/Users/IsabelAdrada/Library/Mobile Documents/com~apple~CloudDocs/universidad/semestre 4/programación orientada a objetos/proyectoFinalPOO-main/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/IsabelAdrada/Library/Mobile Documents/com~apple~CloudDocs/universidad/semestre 4/programación orientada a objetos/proyectoFinalPOO-main/cmake-build-debug/CMakeFiles/rebuild_cache.dir

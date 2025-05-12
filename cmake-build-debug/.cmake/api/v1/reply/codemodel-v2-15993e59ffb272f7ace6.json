@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "practica_sfml",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "practica_sfml::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-practica_sfml-Debug-8591196520391a9593d6.json",
+					"name" : "practica_sfml",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/IsabelAdrada/Library/Mobile Documents/com~apple~CloudDocs/universidad/semestre 4/programacio\u0301n orientada a objetos/proyectoFinalPOO-main/cmake-build-debug",
+		"source" : "/Users/IsabelAdrada/Library/Mobile Documents/com~apple~CloudDocs/universidad/semestre 4/programacio\u0301n orientada a objetos/proyectoFinalPOO-main"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
