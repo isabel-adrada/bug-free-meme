@@ -55,7 +55,7 @@ void Ray::caminarAdelante() {
     moviendoIzquierda = false;
     mirandoDerecha = true;
     enMovimiento = true;
-    sprite.move(1.0f, 0.f);
+    sprite.move(2.0f, 0.f);
 }
 
 void Ray::caminarAtras() {
@@ -63,7 +63,7 @@ void Ray::caminarAtras() {
     moviendoIzquierda = true;
     mirandoDerecha = false;
     enMovimiento = true;
-    sprite.move(-1.0f, 0.f);
+    sprite.move(-2.0f, 0.f);
 }
 
 void Ray::detener() {

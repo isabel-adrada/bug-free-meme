@@ -46,7 +46,59 @@ Escenario::Escenario() : fondoCargado(false) {
     }
 
     // *** CAMBIO 3: Usar solo la plataforma que has definido ***
-    agregarPlataforma(0.0f, 592.0f, 95.0f, 35.0f);  // Plataforma 1
+    //plataformas horizontales
+    //columna 1
+    agregarPlataforma(0.0f, 592.0f, 95.0f, 35.0f);
+    agregarPlataforma(0.0f, 485.0f, 300.0f, 35.0f);
+    agregarPlataforma(0.0f, 380.0f, 95.0f, 35.0f);
+    agregarPlataforma(215.0f, 275.0f, 145.0f, 35.0f);
+    agregarPlataforma(73.0f, 170.0f, 145.0f, 35.0f);
+
+    //columna 2
+    agregarPlataforma(325.0f, 592.0f, 190.0f, 35.0f);
+    agregarPlataforma(515.0f, 485.0f, 190.0f, 35.0f);
+    agregarPlataforma(365.0f, 380.0f, 190.0f, 35.0f);
+    agregarPlataforma(560.0f, 275.0f, 45.0f, 35.0f);
+    agregarPlataforma(360.0f, 170.0f, 145.0f, 35.0f);
+    agregarPlataforma(505.0f, 140.0f, 145.0f, 35.0f);
+
+    //columna 3
+    agregarPlataforma(620.0f, 592.0f, 380.0f, 35.0f);
+    agregarPlataforma(680.0f, 380.0f, 280.0f, 35.0f);
+    agregarPlataforma(680.0f, 245.0f, 190.0f, 35.0f);
+    agregarPlataforma(780.0f, 140.0f, 45.0f, 35.0f);
+
+    //columna 4
+    agregarPlataforma(1115.0f, 540.0f, 95.0f, 35.0f);
+    agregarPlataforma(910.0f, 485.0f, 95.0f, 35.0f);
+    agregarPlataforma(1115.0f, 425.0f, 95.0f, 35.0f);
+    agregarPlataforma(960.0f, 345.0f, 95.0f, 35.0f);
+    agregarPlataforma(1020.0f, 245.0f, 45.0f, 35.0f);
+    agregarPlataforma(1165.0f, 245.0f, 45.0f, 35.0f);
+    agregarPlataforma(1070.0f, 140.0f, 300.0f, 35.0f);
+
+
+
+
+
+
+
+    //plataformas verticales
+    //columna 2
+    agregarPlataforma(472.0f, 522.0f, 40.0f, 110.0f);
+    agregarPlataforma(505.0f, 70.0f, 40.0f, 105.0f);
+
+    //columna 3
+    agregarPlataforma(620.0f, 592.0f, 40.0f, 110.0f);
+    agregarPlataforma(870.0f, 380.0f, 40.0f, 210.0f);
+    agregarPlataforma(830.0f, 70.0f, 40.0f, 205.0f);
+
+    //columna 4
+    agregarPlataforma(1214.0f, 275.0f, 40.0f, 340.0f);
+
+
+
+
 }
 
 Escenario::~Escenario() {

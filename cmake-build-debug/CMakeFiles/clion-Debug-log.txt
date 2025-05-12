@@ -12,6 +12,6 @@
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
 -- Found SFML 2.6.2 in /usr/local/opt/sfml@2/lib/cmake/SFML
--- Configuring done (4.8s)
--- Generating done (0.0s)
+-- Configuring done (4.1s)
+-- Generating done (0.1s)
 -- Build files have been written to: /Users/IsabelAdrada/Library/Mobile Documents/com~apple~CloudDocs/universidad/semestre 4/programación orientada a objetos/proyectoFinalPOO-main/cmake-build-debug
