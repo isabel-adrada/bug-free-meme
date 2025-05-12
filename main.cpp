@@ -2,30 +2,32 @@
 #include "Ray.h"
 #include "HormigaNormal.h"
 #include "HormigaInfectada.h"
+#include "Escenario.h"
 #include <iostream>
 
 int main() {
     // Configuración de la ventana
     sf::RenderWindow ventana(sf::VideoMode(1366, 768), "MiJuego");
-    ventana.setFramerateLimit(60); // Limitar a 60 FPS para un rendimiento constante
+    ventana.setFramerateLimit(60);
 
-    // Variables para establecer los límites de la pantalla
-    float limiteIzquierdo = -200.0f;
-    float limiteDerecho = 1196.0f;
+    // *** CAMBIO 6: Crear el escenario y configurarlo correctamente ***
+    Escenario escenario;
 
-    // Crear una instancia de Ray
+    // Configurar límites del escenario
+    escenario.configurarLimites(0.0f, 1366.0f, 0.0f, 768.0f);
+
+    // La altura del suelo ya se definió en el constructor (650.0f)
+
+    // *** CAMBIO 7: Crear el personaje Ray y posicionarlo correctamente en el suelo ***
     Ray *ray = new Ray("Ray");
+    ray->setPosicion(100.0f, escenario.getAlturaSuelo() - ray->getBounds().height);
 
-    // Crear una instancia de HormigaNormal
+    // Crear el resto de las hormigas y posicionarlas en el suelo
     HormigaNormal *hormigaNormal = new HormigaNormal("Hormiga", 2, 0, {0, 0});
+    hormigaNormal->setPosicion(400.0f, escenario.getAlturaSuelo() - hormigaNormal->getBounds().height);
 
-    // Crear una instancia de HormigaInfectada con solo 1 punto de vida
     HormigaInfectada *hormigaInfectada = new HormigaInfectada("Infectada", 1, {0, 0});
-
-    // Posicionar las hormigas
-    sf::Vector2f posRay = ray->getPosicion();
-    hormigaNormal->setPosicion(posRay.x + 300.0f, posRay.y );
-    hormigaInfectada->setPosicion(posRay.x + 500.0f, posRay.y);
+    hormigaInfectada->setPosicion(700.0f, escenario.getAlturaSuelo() - hormigaInfectada->getBounds().height);
 
     std::cout << "Ejecutando el juego. Controles:" << std::endl;
     std::cout << "- Flechas Izquierda/Derecha: Mover a Ray" << std::endl;
@@ -79,28 +81,34 @@ int main() {
         // Movimiento con teclas y comprobación de límites
         if (!ray->estaAtacando()) {
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
-                if (posicion.x > limiteIzquierdo + 5.0f) {
+                if (posicion.x > escenario.getLimiteIzquierdo() + 5.0f) {
                     ray->caminarAtras();
                 }
             }
 
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
-                if (posicion.x < limiteDerecho - anchoSprite - 5.0f) {
+                if (posicion.x < escenario.getLimiteDerecho() - anchoSprite - 5.0f) {
                     ray->caminarAdelante();
                 }
             }
         }
 
-        // Actualizar estados de los personajes
-        ray->actualizar();
-        hormigaNormal->actualizar();
-        hormigaInfectada->actualizar();  // Incluso si está muerta, actualiza (pero no se moverá)
+        // Actualizar personajes pasando el escenario para física y colisiones
+        ray->actualizar(&escenario);
+        hormigaNormal->actualizar(&escenario);
+        hormigaInfectada->actualizar(&escenario);
 
         // Renderizado
         ventana.clear(); // Fondo negro
+
+        // Dibujar el escenario (fondo y plataformas)
+        escenario.dibujar(ventana);
+
+        // Luego dibujar los personajes
         ray->dibujar(ventana);
         hormigaNormal->dibujar(ventana);
-        hormigaInfectada->dibujar(ventana);  // Siempre dibuja, viva o muerta
+        hormigaInfectada->dibujar(ventana);
+
         ventana.display();
     }
 

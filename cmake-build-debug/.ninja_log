@@ -1,12 +1,12 @@
 # ninja log v6
-8	3261	1747023285745286059	CMakeFiles/practica_sfml.dir/main.cpp.o	3394a8cf3857e118
-3331	5721	1747023289068460909	CMakeFiles/practica_sfml.dir/HormigaNPC.cpp.o	2d82bdda55f09426
-4384	6355	1747023290121485580	CMakeFiles/practica_sfml.dir/HormigaInfectada.cpp.o	45de23cb75f2849e
-12	3331	1747023285749447221	CMakeFiles/practica_sfml.dir/Ray.cpp.o	737a935c556e8a30
-14	2708	1747023285751572059	CMakeFiles/practica_sfml.dir/Personaje.cpp.o	146b30cdd6b155e6
-2713	4384	1747023288450151566	CMakeFiles/practica_sfml.dir/ReyHongo.cpp.o	efe329d915626ae3
-7888	8110	1747023293624732599	practica_sfml	745c779de53ea138
-3263	5982	1747023289000393772	CMakeFiles/practica_sfml.dir/HormigaNormal.cpp.o	83dc2bf53573b58
-5722	7438	1747023291458728154	CMakeFiles/practica_sfml.dir/Jugador.cpp.o	6d97348ff1e2dfe7
-6355	7698	1747023292092518290	CMakeFiles/practica_sfml.dir/Escenario.cpp.o	8e29505913af98a1
-5982	7887	1747023291719486335	CMakeFiles/practica_sfml.dir/Juego.cpp.o	3e74955beb9427d
+7	4589	1747065918545574154	CMakeFiles/practica_sfml.dir/Personaje.cpp.o	76ea4750b6e354c1
+3	6968	1747065918541561216	CMakeFiles/practica_sfml.dir/main.cpp.o	e0a7f8821fc3c625
+5	7438	1747065918543726013	CMakeFiles/practica_sfml.dir/Ray.cpp.o	59f9ffa9eaa80265
+4594	9890	1747065923132679402	CMakeFiles/practica_sfml.dir/ReyHongo.cpp.o	117f538eaeb999e8
+7438	11321	1747065925977013982	CMakeFiles/practica_sfml.dir/HormigaNPC.cpp.o	2204d4b39265e430
+6970	11741	1747065925508857258	CMakeFiles/practica_sfml.dir/HormigaNormal.cpp.o	3e22fe2055a898bd
+11321	13690	1747065929860027228	CMakeFiles/practica_sfml.dir/Jugador.cpp.o	8b249aea1b7446ad
+9891	14431	1747065928429472648	CMakeFiles/practica_sfml.dir/HormigaInfectada.cpp.o	62cbfea359b75c9f
+11742	15510	1747065930280329527	CMakeFiles/practica_sfml.dir/Juego.cpp.o	7fe8af05752da389
+13690	16568	1747065932228838972	CMakeFiles/practica_sfml.dir/Escenario.cpp.o	5ccb0f0d90cea078
+16568	16718	1747065935106485849	practica_sfml	745c779de53ea138
